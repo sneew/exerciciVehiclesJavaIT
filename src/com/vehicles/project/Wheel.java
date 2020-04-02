@@ -9,15 +9,20 @@ public class Wheel {
 		this.diameter = diameter;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((brand == null) ? 0 : brand.hashCode());
-		long temp;
-		temp = Double.doubleToLongBits(diameter);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public double getDiameter() {
+		return diameter;
+	}
+
+	public void setDiameter(double diameter) {
+		this.diameter = diameter;
 	}
 
 	@Override
@@ -38,5 +43,4 @@ public class Wheel {
 			return false;
 		return true;
 	}
-	
 }

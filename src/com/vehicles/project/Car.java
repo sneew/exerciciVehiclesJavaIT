@@ -26,5 +26,4 @@ public class Car extends Vehicle {
 		this.wheels.add(leftWheel);
 		this.wheels.add(rightWheel);
 	}
-
 }
